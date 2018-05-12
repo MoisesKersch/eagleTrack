@@ -1,0 +1,286 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "bower_components/eonasdan-bootstrap-datetimepicker/src/sass/_bootstrap-datetimepicker.scss";
+@import "resources/assets/sass/cadastro.scss";
+@import "resources/assets/sass/relatorios.scss";
+@import "resources/assets/sass/roteirizador.scss";
+@import "resources/assets/sass/interfaceAcompanhamento.scss";
+@import "resources/assets/sass/finalizacaoRota.scss";
+@import "resources/assets/sass/coletivos/linhas.scss";
+
+
+@font-face {
+    font-family: nexabold;
+    src: url('../public/fonte/Nexa-Bold.otf');
+}
+
+@font-face {
+    font-family: nexabook;
+    src: url('../public/fonte/Nexa-Book.otf');
+   }
+
+body {
+	font-family: 'nexabook', sans-serif !important;
+
+    .x-navigation {
+        li.xn-logo {
+            span {
+                font-size: 23px;
+                color: #000;
+
+                &:before {
+                    color: #FFF;
+                    font-size: 30px;
+                }
+            }
+
+        .ul {
+
+            li {
+                color:#a9acc7;
+
+                &.active {
+                    span::before{
+                        color:#FFF;
+                    }
+
+                }
+            }
+            }
+
+        }
+
+        .dropdown {
+            .dropdown-menu {
+                .tb-sair {
+                    width: 100%;
+                    background-color: #17191E;
+                    border: 0;
+                    margin: 0;
+                    padding: 12px 10px;
+                    color: #8b91a0;
+                    text-align: left;
+
+                    &:hover {
+                        transition: all 0.3s ease;
+                        padding-left: 15px;
+                        background: #2a2f39;
+                        color: #FFF;
+                    }
+                }
+            }
+        }
+    }
+
+    .x-navigation.x-navigation-horizontal .xn-icon-button > a {
+        width:70px;
+    }
+
+    .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+
+        background: #17191e;
+        color: #8b91a0;
+    }
+    .x-navigation.x-navigation-horizontal > li > ul {
+        right: 0px;
+        left:inherit;
+        width: 160px;
+        &:before {
+            border-bottom-color: #17191e;
+        }
+        &:after {
+            display:none;
+        }
+    }
+    .x-navigation > li {
+        &.active {
+            a {
+                span {
+                    &:before{
+                        color: #fff;
+                    }
+                }
+            }
+            & > ul > li {
+                a {
+                    span {
+                        &:before{
+                            color: #8b91a0;
+                        }
+                    }
+                }
+            }
+        }
+
+          & > ul > li {
+
+            &.active {
+                a {
+                   padding-left: 16px;
+                   background: #2a2f39;
+
+                   &:hover {
+                       padding-left: 16px;
+                       background: #2a2f39;
+
+                   }
+                   &:active {
+                       padding-left: 16px;
+                       background: #2a2f39;
+
+                   }
+                   span::before {
+                    color:#FFF;
+                   }
+                }
+            }
+
+           & > a {
+                padding-left: 15px;
+
+                &:hover {
+                    background: #2a2f39;
+                    padding-left: 16px;
+
+                    span::before {
+                        color:#FFF;
+                    }
+                }
+                &:active {
+                    background: #2a2f39;
+                    padding-left: 16px;
+
+                    span::before {
+                        color:#FFF;
+                    }
+                }
+            }
+
+        }
+    }
+
+
+    .x-navigation li > a {
+        padding: 15px 10px 15px 5px;
+    }
+
+    .page-title {
+        h2 {
+            font-weight: 600 !important;
+            font-size: 20px;
+
+            span {
+                &:before {
+                    color: #333;
+                    font-size: 25px;
+                    margin-left: 20px;
+                    padding-right: 0px
+                }
+            }
+            a,button {
+                span {
+
+                    &:before{
+                        color:#FFF;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    #app {
+
+        .page-container {
+            // background: #f1f1f0 !important;
+            height:100%;
+
+            .page-sidebar {
+                height: 100% !important;
+                background-color: #080a0e;
+            }
+        }
+    }
+
+    .eagle-navbar {
+        background-color: rgba(255, 255, 255, 0.28);
+    }
+
+    .form-control {
+        height: 35px !important;
+    }
+    label {
+        font-size:14px;
+    }
+    hr {
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    .center{
+        text-align: center;
+    }
+
+    .panel-eagle {
+        background-color: rgba(255, 255, 255, 0.27);
+
+        .panel-heading {
+            background-color:rgba(255, 255, 255, 0.49);
+        }
+    }
+
+    #mapaPrincipal {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+
+    }
+
+    .sorting:before, .sorting_asc:before, .sorting_desc:before {
+        display:none;
+    }
+
+    #sectionNovaRegiao, #sectionNovaRegiaoSalvar {
+        display: none;
+    }
+
+	#tablePainelAlertaManutencao{
+		color: #1b1e24;
+	}
+
+
+    #veicRegioes{
+
+        #tableVeicnaRegi{
+            .qnd-carro{
+                background-color: #1CAF9A;
+                text-align: center ;
+                border-radius: 12px;
+                color: white;
+                aling: center;
+            }
+        }
+        .centralizar{
+            text-align:center;
+        }
+
+        li{
+            list-style: none;
+            text-align: center;
+        }
+    }
+}
+
+.leaflet-control-container .leaflet-routing-container-hide {
+    display: none;
+}

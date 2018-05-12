@@ -1,0 +1,62 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+//fonte da eagle
+@font-face {
+    font-family: nexabold;
+    src: url('../public/fonte/Nexa-Bold.otf');
+}
+
+@font-face {
+    font-family: nexabook;
+    src: url('../public/fonte/Nexa-Book.otf');
+}
+
+
+    body{
+        //  background-image: url('fundo.jpg');
+        background-image: url('imagens/fundo.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: Nexa-Book;
+        font-size: 30px;
+    }
+
+    @font-face {
+      font-family: Nexa-Bold;
+      src: url('Nexa-Bold.otf');
+    }
+
+    @font-face {
+      font-family: Nexa-Book;
+      src: url('Nexa-Book.otf');
+    }
+    img{
+        width: 350px
+    }
+    .imgcone{
+        margin-top: 120px
+    }
+    .ops{
+        font-family: Nexa-Bold;
+        font-size: 40px;
+        padding-top: 60px
+    }
+    .botao{
+        padding: 10px 50px 10px 50px;
+        font-size: 17px;
+        margin-top: 60px;
+        margin-left:65%;
+    }
+    @media only screen and (max-width: 600px) {
+      img {
+        width: 250px;
+      }
+    }

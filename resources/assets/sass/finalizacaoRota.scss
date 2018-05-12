@@ -1,0 +1,244 @@
+.mapa-finalizacao-rota {
+	height : 650px;
+	transition: height 0.3s ease-out;
+}
+
+#finalizacaoRota, #tableMesclagemVeiculoDisponivel {
+
+	//icone
+	.icon-iten{
+		font-size: 48px;
+	}
+
+	.form-finalizacao-rota {
+		padding: 10px 0px;
+
+		button {
+			margin: 3px;
+		}
+
+	}
+
+    .block-opcoes-finalizacao{
+    	display:table;
+    	float:right;
+    	width: 45%;
+
+        input, a , button{
+            // padding: 2px;
+            margin: 3px;
+        }
+
+        #btnMesclaRota {
+    	    background-color: #1E90FF;
+    		border-color: #1c8dfb;
+        }
+
+        #btnMesclaRota:hover {
+    	    background-color: #0081ff;
+    		border-color: #0081ff;
+        }
+
+        .bt-imprimir-rotas {
+        	background-color: #4169E1;
+    		border-color: #3863e6;
+        }
+
+        .bt-imprimir-rotas:hover {
+        	background-color: #2b55d4;
+    		border-color: #1e4ddc;
+        }
+    }
+
+	.item-ico-num{
+		font-size: 18px;
+	    position: absolute;
+	    top: 5px;
+	    width: 24px;
+	    height: 24px;
+	    left: 1.8px;
+	    z-index: 11;
+	    border-radius: 18px;
+	    border: 99px;
+	    padding: 4px;
+	    background-color: white;
+		color: black;
+	    text-align: center;
+	}
+
+	//custoim colors
+	.item-warning{
+		background-color: #fff3cd
+	}
+
+	.item-secondary{
+		background-color: #e7e8ea
+	}
+
+	.item-success{
+		background-color: #d4edda
+	}
+
+	.item-danger{
+		background-color: #f8d7da
+	}
+
+	.tableListaRotasFinalizacao {
+		.divTitleListaRota {
+			display: table;
+			float: left;
+		}
+
+		.divLegendaListaRota {
+			display: table;
+			float: left;
+			width: 31%;
+
+			.divLegendaListaRotaItem {
+				display: table;
+				float: left;
+				margin: 0px 4px;
+
+				span {
+					height: 12px;
+					width: 12px;
+					position: relative;
+					float: left;
+					border-radius: 5px;
+					border: 1px solid lightgrey;
+					top: 2px;
+				}
+
+				div {
+					display: table;
+					float: left;
+				}
+			}
+		}
+	}
+}
+
+.table-responsive {
+	max-height: 200px;
+	overflow-y: auto;
+}
+
+#headerTableFinalizacao {
+    margin-bottom: 0px;
+}
+
+.stl-table th, .stl-table td{
+    width: 8.3%;
+    float: left;
+
+	a{
+		padding-left : 0px;
+	    font-size: 25px;
+	    margin-left: 5px;
+
+		input{
+			width: 22px;
+			height: 22px;
+		}
+	}
+}
+
+.table-responsive{
+	input.form-control.imput_color{
+	    padding: 0px;
+	    width: 25px;
+    	height: 25px !important;
+    	border: 0;
+	}
+}
+
+#modalAlerta {
+	.modal-body {
+		padding: 0px 5px 5px 5px;
+
+		#divRotasSelecionadas {
+			display: table;
+			width: 100%;
+		}
+	}
+	.divTitleRotasVeiculos {
+	    padding: 5px;
+	    float: left;
+	    position: relative;
+	    width: 100%;
+	}
+	.divTableOverflow {
+		margin-bottom: 0px;
+	}
+	.divTableMesclagemRotaSelecionado {
+		overflow-x: auto;
+		max-height: 150px;
+		position: relative;
+		float: left;
+		width: 100%;
+		border: 1px solid #d3d3d3;
+	}
+	.modal-footer {
+		display: table;
+		width: 100%;
+
+		.btn-footer-cmr {
+			position: relative;
+			float: right;
+			padding: 4px;
+			width: 50%;
+		}
+		.warning-confirmacao-mesclagem {
+			position: relative;
+			float: left;
+			width: 50%;
+
+			div {
+				border: 1px solid #faebcc;
+				border-radius: 10px;
+				background: #fcf8e3;
+				color: #8a6d3b;
+				text-align: center;
+				padding: 1px;
+				display: none;
+			}
+		}
+	}
+}
+
+#tableFinalizacao, #tableMesclagemVeiculoDisponivel tbody, .divLegendaListaRotaItem {
+	.fa {
+		font-size: 18px;
+		color: #1b1e24;
+    }
+
+    .check-mesclagem-rota {
+	    width: 18px;
+	    margin-top: 10px;
+	    height: 22px;
+    }
+
+    .ocultarAcoesMRDois {
+    	text-align:center;
+    	display:none;
+    }
+
+    .sucesso{
+		background-color: #95b75d;
+	}
+	.alerta {
+		background-color: #fe970a;
+	}
+    .perigo {
+    	background-color: #E04B4A;
+    }
+    .padao {
+    	background-color: #ccc;
+    }
+}
+
+#finalizacaoRota {
+	.to-collapse-finalizacao {
+		margin-bottom: 50px;
+	}
+}

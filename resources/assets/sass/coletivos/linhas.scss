@@ -1,0 +1,271 @@
+#modalClean{
+    .btn-primary {
+        background-color: #2196f3;
+        border-color: #2196f3;
+
+        &:hover {
+            background-color:#2479bd;
+            border-color:#22659a;
+        }
+    }
+    .bt-remover-ponto:focus{
+        background-color: #000000;
+    }
+}
+
+.lidescricao-error{
+    color: red;
+}
+
+.val-error{
+    color: red;
+}
+
+.coletivos-linhas{
+
+    .select2.select2-container {
+        width: 100% !important;
+    }
+
+    .ajax-loading {
+        transition: all 0.3s;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    .ajax-loading.active {
+        opacity: 1;
+        z-index: 100;
+    }
+
+    .minmargin {
+      margin: 2px ;
+    }
+
+    .minpadding {
+      padding: 2px;
+    }
+
+    .btn-primary {
+        background-color: #2196f3;
+        border-color: #2196f3;
+
+        &:hover {
+            background-color:#2479bd;
+            border-color:#22659a;
+        }
+        &:active {
+            background-color:#2479bd;
+            border-color:#22659a;
+        }
+        &:focus {
+            background-color:#2479bd;
+            border-color:#22659a;
+        }
+    }
+
+    .btpontos-cadlinhas{
+        margin-top: 26px;
+    }
+
+    .tab-content{
+        margin-top: 60px;
+        position: relative;
+        #loader{
+            display: none;
+            background-color: rgba(38, 35, 54, .1);
+            position: absolute;
+            z-index: 1;
+            text-align: center;
+            height: 543px;
+
+            .fa-spinner{
+                margin-top: 243px;
+            }
+        }
+
+        .panel{
+            padding: 10px;
+
+            .lbl-vel-media{
+                margin-top: 10px;
+            }
+
+            input[type="number"]{
+                min-width: 100px;
+            }
+
+
+            table{
+                width: 100%;
+                margin-bottom: 0px;
+
+                .thead-hidde{
+                    display: none;
+                }
+            }
+
+            .search-tb-pontos{
+                span{
+                    float: right;
+                }
+            }
+
+            .bt-search-pontos{
+                position: relative;
+                float: right;
+
+                span{
+                    right: 10px;
+                    position: absolute;
+                    top: -24px;
+                    font-size: 15px;
+                }
+            }
+
+            #mapaLinhas{
+                min-height: 500px;
+                z-index: 0;
+            }
+
+            .ponto-referencia{
+                // position: relative;
+                position: absolute;
+                color: #0684b5;
+            }
+
+            .ponto-coleta{
+                // position: relative;
+                position: absolute;
+                color: #ff0005;
+            }
+
+            .ponto-entrega{
+                // position: relative;
+                position: absolute;
+                color: #408700;
+            }
+
+            .circle{
+                font-family: nexabook;
+                background-color: white;
+                border-radius: 21px;
+                font-size: 15px;
+                padding-left: 3px;
+                padding-right: 3px;
+                padding-top: 4px;
+                min-width: 22px;
+                text-align: center;
+                position: absolute;
+                top: 2px;
+                left: 1px;
+                color: black;
+                position: absolute;
+                top: 120%;
+                left: 96%;
+                transform: translate(-50%, -50%);
+            }
+
+            .circle-referencia{
+                border: 2px solid #0684b5;
+            }
+            .circle-coleta{
+                border: 2px solid #ff0005;
+            }
+            .circle-entrega{
+                border: 2px solid #408700;
+            }
+
+            .fa-map-marker{
+                font-size: 40px;
+            }
+
+            .leaflet-popup-content{
+                text-align: center;
+                font-size: 10px;
+                margin: 5px 18px;
+                a{
+                    color: white;
+                }
+            }
+
+            .img-table{
+                width: 30px;
+            }
+
+            .pequena-width{
+                width: 13px;
+
+                .bt-remover-ponto{
+                    font-size: 20px;
+                }
+            }
+
+            .scoll-ponto {
+                height: 410px;
+                overflow: auto;
+                width: 100%;
+                padding: 0px;
+
+                .ponto-tabela-linha{
+                    td{
+                        vertical-align: middle;
+                        padding: 2px;
+                    }
+                }
+            }
+            .remove-ponto-list{
+                font-size: 25px;
+            }
+        }
+    }
+
+    .totalizadores{
+        padding-top: 10px;
+        height: 60px;
+        width: 250px;
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-top: -60px;
+
+        label{
+            color: white;
+            width: 100%;
+            margin: -9px;
+            padding: 0px;
+        }
+    }
+
+    #definirHorario{
+        .bt-add-dia-semana{
+            margin-top: 26px;
+        }
+
+        .scroll{
+            height:265px;
+            // overflow:auto;
+        }
+
+        tbody{
+            td{
+                text-align: center;
+                .fa{
+                    font-size: 30px;
+                    margin: 3px;
+                    padding: 0px;
+                }
+            }
+
+            .td-span-remove{
+                margin: 0px;
+                padding: 0px;
+            }
+        }
+
+        .block-salvar{
+            .float-left{
+                float: right;
+            }
+        }
+
+    }
+}

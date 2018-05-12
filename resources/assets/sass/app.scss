@@ -1,0 +1,1694 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "resources/assets/sass/cadastro.scss";
+@import "resources/assets/sass/relatorios.scss";
+
+//fonte da eagle
+@font-face {
+    font-family: nexabold;
+    src: url('../public/fonte/Nexa-Bold.otf');
+}
+
+@font-face {
+    font-family: nexabook;
+    src: url('../public/fonte/Nexa-Book.otf');
+}
+
+.circle{
+    background-color: white;
+    border-radius: 8px;
+    font-size: 15px;
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    position: absolute;
+    color: black;
+    position: absolute;
+    top: 108%;
+    left: 96%;
+    transform: translate(-50%,-50%);
+    min-width: 30px;
+    text-align: center;
+    height: 21px;
+}
+
+.fa.fa-map-marker.markerRota {
+    font-size: 37px;
+}
+
+
+#rotasPainelCollapse{
+    .dataTables_scrollHeadInner{
+        width: 100% !important;
+        table.table.hover.dataTable.no-footer {
+            width: 100% !important;
+        }
+    } 
+}
+
+.marker-check{
+    height: 20px;
+    width: 20px;
+}
+
+.popup-rotas{
+    margin-left: -10px;
+    margin-right: 10px;
+}
+
+.titlerotas-marker{
+    margin-bottom: -10;
+    color: black;
+    margin-top: -12px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: -18px;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.iconrotas{
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.without-overflow{
+	overflow: hidden;
+}
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+    background-image: url(../backgorundLogin/background_new.jpg);
+    background-position-x: 50%;
+    background-size: cover;
+
+    .img-logo-resp {
+    	display: none;
+    }
+
+    .x-navigation.x-navigation-horizontal .xn-icon-button > a {
+    	width:65px;
+    }
+
+    @media (max-width: 1023px) {
+	    background-color: #343331;
+	    background-image: none;
+
+		.img-logo-resp {
+		    width: 100%;
+		    display: block;
+		    text-align: center;
+		}
+
+	  }
+	@media (max-width: 768px) {
+		.container {
+		    width: auto;
+		}
+	}
+
+	#modalAlerta {
+		.alert.alert-success {
+
+		}
+	}
+
+    .eagle-navbar {
+    	background-color: rgba(255, 255, 255, 0.28);
+    	z-index: 1;
+    	border-color: #d3e0e92b;
+
+        .nav-eagle {
+            font-size:17px;
+
+            li {
+                //borda menu aqui
+                // border-left: 1px solid #cccccc;
+            }
+        }
+
+        .nav .open > a {
+            background-color: #ffffff;
+            opacity: 0.8;
+        }
+
+        .title-eagle {
+            font: 12px nexabook;
+            letter-spacing: 4px;
+            color: #1e191a !important;
+            padding: 5px;
+
+            img {
+                width: 50px;
+                float: left;
+                position: relative;
+            }
+
+            div {
+                float: left;
+                position: relative;
+                padding: 14px 5px;
+
+                span {
+                    font-family: nexabold;
+                }
+            }
+        }
+
+    	&.login {
+    		background-color: rgba(255, 255, 255, 0);
+    		.navbar-header {
+    			a{
+		    		color: #FFF;
+    			}
+    		}
+    	}
+
+        .dropdown {
+            cursor: pointer;
+
+            a {
+                color: #777;
+                position: relative;
+                display: block;
+                padding: 13px 15px;
+                line-height: 22px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+            a:hover {
+                color: #333;
+            }
+
+            .dropdown-menu {
+                opacity: 0.8;
+                background-color: #ffffff;
+                z-index: 1;
+                border: 1px solid #d3e0e92b;
+                padding: 7px;
+                // border: 1px solid transparent;
+                // border-color: #d3e0e92b;
+
+                li {
+                    position: relative;
+                    width: 155px;
+
+                    input {
+                        position: relative;
+                        float: left;
+                        margin-right: 2px;
+                    }
+                }
+            }
+        }
+    }
+
+    .panel-eagle {
+        background-color: rgba(255, 255, 255, 0);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+        border-color: #d3e0e947;
+        color:#FFF;
+
+        .panel-heading {
+            background-color:rgba(255, 255, 255, 0.15);
+        	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+        	border-color: #d3e0e947;
+        	color:#FFF;
+        }
+        .ip-senha {
+        	margin: 12px 0;
+        }
+        .block-bt-entrar {
+        	text-align: right;
+        }
+    }
+    .select-painel {
+        .select2-container {
+            position: absolute;
+            width: 100% !important;
+
+            .select2-selection--multiple {
+                .select2-selection__rendered {
+                    height: 30px;
+                }
+            }
+        }
+    }
+
+    // Painel de Controle - app.scss
+    #filtro-tabela-pc {
+    //   position: fixed;
+      width: 30%;
+      float: right;
+    }
+
+    #painelControle {
+    	z-index: 1 !important;
+
+        .paramRotas {
+            display: none;
+            position: relative;
+
+            row {
+                position: absolute;
+                top: 5px;
+                left: 388px;;
+            }
+
+            &.mostra {
+                    display: block;
+                }
+        }
+
+        .btn-dark{
+            color: white;
+            background-color: darkgray;
+        }
+    }
+
+    #painelControleCollapse{
+        max-height: 300px;
+        position: relative;
+    }
+
+    #tablehide{
+         background: white;
+    }
+
+    #painelControleTabela {
+        // tbody{
+        //     overflow-y: scroll;
+        // }
+        max-height: 300px;
+        overflow: hidden;
+        margin-top: 0px;
+
+        tr{
+            background-color: #fff;
+        }
+
+        .dataTables_scrollHeadInner{
+            width: 100% !important;
+        }
+
+        .table{
+            width: 100% !important;
+        }
+    }
+
+    #painelControleTabela1 {
+        max-height: 300px;
+        background: white;
+        margin-left: 9%;
+        position: relative;
+        z-index: 1;
+        //left: 386px;
+        // overflow: hidden;
+        // margin-top: 4px;
+
+        // .dataTables_scrollHeadInner{
+        //     width: 100% !important;
+        // }
+
+        // .table{
+        //     width: 100% !important;
+        // }
+    }
+
+    #tableRotas_wrapper{
+        margin-top: -29px;
+    }
+
+    #labelRota{
+        margin-left: 30px;
+    }
+
+    #teste{
+        padding-left: 0px;
+    }
+
+    #backWhite{
+        background: white;
+    }
+
+      #select-rotas{
+    	text-align: left;
+    }
+
+
+    .rotasPainelControle{
+    	background: white;
+    }
+
+	.filters{
+		margin-left: 10px;
+	}
+
+    .table.dataTable thead th {
+      border-bottom: 0;
+    }
+
+    .table.dataTable tfoot th {
+      border-top: 0;
+    }
+
+    .table.dataTable td  {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      max-width: 110px;
+    }
+
+    body #painelControleTabela tr {
+        background-color: #fff;
+        height: 39px;
+    }
+
+    .table.dataTable tbody th, .table.dataTable tbody td {
+        padding: 0px 10px;
+    }
+
+    #filtro-painel-controle {
+        height: 37px;
+        float: left;
+        width: 100%;
+        position: absolute;
+        background: rgba(255,255,255,0.8);
+        top: 1px;
+        // opacity: 0.7;
+        // z-index: 1;
+
+        #divFiltroIgnicao {
+            display: table;
+            float: left;
+            padding: 6px;
+            margin: auto;
+            position: relative;
+            z-index: 10;
+            margin-left: 10%;
+
+            .labelIgnicao {
+                float: left;
+                position: relative;
+            }
+            div {
+                float: left;
+                position: relative;
+                margin-left: 8px;
+
+                label {
+                    font-weight: initial !important;
+                }
+
+                input {
+                    float: left;
+                }
+            }
+        }
+    }
+
+    #select-rotas-empresas{
+    	position: relative;
+    }
+
+    .select2-container {
+        z-index: 10;
+        width: 80%;
+        // opacity: 1 !important;
+    }
+
+    #tabelaPainelControle {
+        background-color: #fff;
+        margin: 0px;
+        float: left;
+        max-height: 200px;
+
+        .bloqueiaLatLngGoTo {
+            position: absolute;
+            margin-left: 16px;
+            width: 47%;
+            height: 61%;
+            z-index: 15;
+            cursor: not-allowed;
+        }
+
+        thead{
+            input{
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        tbody{
+            .localizar-veiculo{
+                margin-left: 16px;
+                font-size: 20px;
+            }
+            input{
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        width: 80px;
+
+    }
+
+    #tabelaPainelControle .glyphicon-remove-sign {
+        color: #ff0000;
+    }
+
+    #tabelaPainelControle .glyphicon-ok-sign {
+        color: #00a003;
+    }
+
+    #alertaPainelControle {
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+    }
+
+    #mapaPrincipal {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+
+        .span.msg-success {
+		    display: block;
+		    width: 100%;
+		    text-align: center;
+		    margin: 23px 0;
+		}
+
+		.bt-acoes {
+			width: 300px;
+			height: 29px;
+
+			.associar-a-ponto, .cadastrar-novo-ponto {
+				padding: 7px 16px;
+				color: #FFF;
+
+				&:hover{
+					text-decoration: none;
+				}
+			}
+			.cadastrar-novo-ponto {
+                text-decoration:none;
+			    border-top-right-radius: 4px;
+			    border-bottom-right-radius: 4px;
+			    float: right;
+			    background-color: #445bdb;
+
+			    &.sozinho {
+					width: 100%;
+					border-radius: 4px;
+					text-align: center;
+			    }
+
+			    &:hover{
+					text-decoration: none;
+				}
+			}
+
+			.associar-a-ponto {
+				background-color: #2196f3;
+			    border-top-left-radius: 4px;
+			    border-bottom-left-radius: 4px;
+			    float: left;
+
+			    &:hover{
+					text-decoration: none;
+				}
+			}
+		}
+		.campo-obrigatorio {
+			display: block;
+		    text-align: right;
+		}
+		.descricao-novo-ponto {
+		    margin: 6px 0;
+		}
+		.block-bts {
+			padding: 5px 0px 0px;
+    		text-align: right;
+
+			.associar-ponto {
+				    background-color: #4696f4;
+				    border-color: #4696f4;
+				    padding: 6px 14px;
+				    display: inline-block;
+				    color: #FFF;
+			        border-top-left-radius: 4px;
+				    border-bottom-left-radius: 4px;
+
+				    &:hover{
+						text-decoration: none;
+					}
+				}
+			.cancelar-associacao {
+				background-color: #f34336;
+				border-color: #f34336;
+			    padding: 6px 14px;
+			    display: inline-block;
+			    color: #FFF;
+			    border-top-right-radius: 4px;
+			    border-bottom-right-radius: 4px;
+
+		        &:hover{
+		    		text-decoration: none;
+		    	}
+			}
+		}
+
+		.leaflet-popup-content-wrapper {
+			border-radius: 4px;
+		}
+
+        .ponto-descricao {
+            display: block;
+            width: 200px;
+            font-weight: bold;
+        }
+		.select-tipo-ponto, .ip-nome-ponto {
+		    height: 27px;
+    		padding: 0px 0px;
+		}
+		.alinhar-input {
+			display: inline-block;
+		    width: 75%;
+		    margin-bottom: 5px;
+		}
+		.alinhar-label{
+		    display: inline-block;
+    		width: 25%;
+		    height: 20px;
+		}
+
+		.bt-edit-ponto {
+			background-color: #2196F3;
+			color: #FFF;
+		}
+		.bt-salvar-pt {
+			background-color: #2196F3;
+			color: #FFF;
+			margin-right: 3px;
+		}
+		.bt-cancelar-update {
+			color: #FFF;
+		}
+		.bts-acoes {
+			width: 49%;
+		}
+		.ip-range {
+			height: 10px;
+		}
+        .leaflet-marker-icon.leaflet-div-icon.leaflet-zoom-animated.leaflet-interactive {
+            border: none;
+            background-color: transparent;
+        }
+        .leaflet-marker-icon {
+            // border: none;
+            // background-color: transparent;
+
+            &.divIcon {
+                width: 70px !important;
+                text-align: center;
+                margin-left: -35px !important;
+            }
+
+            div.markerVeiculo {
+                position: relative;
+
+                .veprefixo {
+                    background-color: white;
+                    border: 1px solid #08c;
+                    border-radius: 5px;
+                    width: 70px;
+                    text-align: center;
+                    font-size: 11px;
+                    float: left;
+                    font-weight: 700;
+                }
+            }
+
+            .custom-cluster {
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                position: relative;
+
+                &.colore-verde {
+                    background-color: rgba(0, 128, 0, 0.4196078431372549);
+                }
+                &.colore-amarelo {
+                    background-color: rgba(240, 194, 12, 0.6);
+                }
+                &.colore-vermelho {
+                    background-color: rgba(241, 128, 23, 0.6);
+                }
+            }
+            .trucc {
+                font-size: 20px;
+                bottom: 5.5px;
+                position: absolute;
+                left: 5.5px;
+                background-color: rgba(0, 128, 0, 0.4196078431372549);
+                padding: 5px;
+                border-radius: 20px;
+                color: #000;
+
+                &.colore-verde {
+                    background-color: rgba(0, 128, 0, 0.4196078431372549);
+                }
+                &.colore-amarelo {
+                    background-color: rgba(240, 194, 12, 0.6);
+                }
+                &.colore-vermelho {
+                    background-color: rgba(241, 128, 23, 0.6);
+                }
+            }
+            .qtd-car {
+               position: absolute;
+               top: 0;
+               right: 0;
+               font-weight: bold;
+               font-size: 11px;
+               background-color: #FFF;
+               border-radius: 20px;
+               padding: 0px 6px;
+               color: #000;
+           }
+        }
+
+        .marker-ponto {
+            position: relative;
+
+            img {
+                position: absolute;
+                bottom: -7px;
+                left: -11px;
+            }
+        }
+    }
+
+    .motorista-erro {
+      display: none;
+    }
+
+		#divOpcoesVeiculo {
+		    position: absolute;
+		    display: none;
+		    background: #FAFAFA;
+		    width: 250px;
+		    height: 385px;
+		    z-index: 1;
+		    top: 5%;
+		    left: 15px;
+        	margin-top: 20px;
+        	border: none;
+		    -webkit-border-radius: 10px;
+		    -moz-border-radius: 10px;
+		    -ms-border-radius: 10px;
+		    border-radius: 6px;
+		    padding: 5px;
+			box-shadow: 0 3px 14px rgba(0,0,0,0.4);
+			font-weight: 500;
+			color: #000000;
+			font-size: 12px;
+
+			.titleInfoV {
+				font-size: 13px;
+			}
+
+			#divInformacoesVeiculo{
+			    display: table;
+	    		width: 100%;
+
+	    		.infoVeiculoTitulo {
+				    display: table;
+				    float: left;
+				    width: 100%;
+				    margin-bottom: 3px;
+
+				    div {
+				    	display: table;
+		    			float: left;
+				    }
+
+				    button {
+				    	position: relative;
+					    float: right;
+					    width: 18px;
+					    height: 18px;
+					    padding: 0px 2px;
+
+					    span {
+					    	position: relative;
+					    	top: 0px;
+					    }
+				    }
+				}
+			}
+
+			#divInfoVeiculos {
+				.divInfoVeiculos {
+					display: table;
+				    float: left;
+				    width: 50%;
+				    line-height: 17px;
+
+				    .divInfoVeiculosLeft {
+				    	background-color: #cee3f3;
+					    text-align: center;
+					    width: 99%;
+					    border-bottom: 1px solid rgba(158, 158, 158, 0.1);
+				    }
+				    .divInfoVeiculosRight {
+				    	background-color: #edf2f6;
+				    	border-bottom: 1px solid rgba(158, 158, 158, 0.1);
+				    	font-weight: 400;
+				    }
+			    }
+			}
+
+            .destaca-trecho {
+                &:hover {
+                    cursor:pointer;
+                }
+            }
+
+            .switch {
+            	position: relative;
+				display: inline-block;
+				width: 45px;
+				height: 17px;
+				display: table;
+    			float: left;
+
+            	.slider::before {
+            		height: 12px;
+					width: 12px;
+            	}
+            	.slider.round {
+            		width: 45px;
+            	}
+            	input:checked + .slider {
+            		width: 45px;
+            	}
+            }
+
+            table tbody {
+            	line-height: 0.5;
+            }
+
+            #divAcoesVeiculo {
+            	display: table;
+            	width: 100%;
+
+            	.divBtnsAcoes {
+            		display: table;
+            		margin: auto;
+            		margin-bottom: 10px;
+
+            		.left {
+            			float: left;
+            			display: table;
+
+            			.divCheckboxOpcoes {
+            				display: table;
+    						margin-bottom: 2.7px;
+            			}
+            		}
+            	}
+
+            	.divBtnsAcoes > div {
+            		display: table;
+
+            		span {
+        			    display: table;
+    					float: left;
+            		}
+
+            		.panicoOpcoes {
+    					margin: 0px 10px;
+            		}
+            	}
+            }
+
+            .divParamDataInfoVeiculos {
+            	display: table;
+
+                .paramDataInfoVeiculos {
+                	display: table;
+    			    float: left;
+    			    width: 50%;
+    			    font-size: 11px;
+                }
+            }
+
+            #tbPainelInfoVeiculos {
+            	input[type="checkbox"] {
+            		margin: 0px;
+            	}
+
+            	td {
+            		padding: 2px;
+            	}
+
+            	.btn-group-justified > .btn-group .btn {
+            		width: 99%;
+            		height: 19px;
+            		padding: 0px 5px;
+            	}
+            }
+
+            #btnListaPosInfoVeiculos {
+            	width: 100%;
+			    margin-top: 5px;
+			    background-color: #5bc0de;
+			    border: none;
+			    color: #ffffff;
+			    border-radius: 5px;
+			    height: 26px;
+            }
+
+            #btnListaPosInfoVeiculos:hover {
+            	background-color: #08a4d2;
+            }
+
+            #divCarregandoOpcoesPC {
+            	position: absolute;
+				width: 97%;
+				height: 177px;
+				z-index: 1;
+				display: none;
+				background: #ffffff;
+				border-radius: 10px;
+				opacity: 0.9;
+
+				div {
+					text-align: center;
+					top: 35%;
+					position: relative;
+				}
+            }
+		}
+
+		#divOpcoesVeiculoListaPosicoes {
+			position: absolute;
+		    display: none;
+		    background: #FAFAFA;
+		    width: 355px;
+		    height: 385px;
+		    z-index: 10;
+		    top: 5%;
+		    left: 275px;
+		    margin-top: 20px;
+		    border: none;
+		    border-radius: 6px;
+		    padding: 5px;
+		    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);
+		    font-weight: 500;
+		    color: #000000;
+		    font-size: 12px;
+
+		    .tituloListaPosicoes {
+		    	width: 100%;
+		    	display: table;
+
+		    	span {
+		    		display: table;
+		    		float:left;
+		    		top: 0px;
+		    	}
+
+		    	#tituloResultadosOpcoesVeiculos span {
+		    		top: 2px;
+		    	}
+
+		    	button {
+			    	position: relative;
+				    float: right;
+				    width: 18px;
+				    height: 18px;
+				    padding: 0px 2px;
+		    	}
+		    }
+
+		    #divResultadoDentroOpcoesVeiculos {
+	    	       margin: auto;
+			    height: 328px;
+			    position: relative;
+			    overflow-x: auto;
+		    }
+
+		    #legenda-resultado-veiculo {
+		    	display: table;
+		    	margin: auto;
+		    }
+
+		    .legenda-resultado-veiculo {
+		        display: table;
+		        float: left;
+		        margin-right:8px;
+		        font-size: 11px;
+
+		        span {
+		            height: 12px;
+				    width: 12px;
+				    position: relative;
+				    float: left;
+				    top: 2px;
+				    border-radius: 3px;
+				    margin-right: 3px;
+		        }
+		        div {
+		            display: table;
+		        }
+		    }
+
+
+		    hr {
+	    	    margin-top: 5px;
+    			margin-bottom: 5px;
+		    }
+		}
+
+
+		.modal-content {
+		    max-height: 755px !important;
+		    overflow: auto !important;
+		}
+		.input-group-addon {
+		    padding: 0px 12px;
+		}
+
+		.mensagens {
+		    width: 60%;
+		    position: absolute;
+		    top: 25px;
+		    right: 14px;
+		}
+		.oculto {
+		    display: none;
+		}
+
+		#mapaPrincipal{
+		    height: 100%;
+		    width: 100%;
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    z-index: 0;
+		}
+
+		#index{
+		    position: absolute;
+		    width: 100%;
+		    height: 100%;
+		    background-image: url('../img/background.png');
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    overflow: auto;
+		}
+
+		#divLogin{
+		    position: relative;
+		    z-index: 1;
+		    top: 40%;
+		    width: 400px;
+		    left: 74%;
+		    margin-left: -285.1px;
+		}
+
+		#divLogoEagle h2{
+		    font-size: 50px;
+		}
+
+		#divCabecalho{
+		    position: absolute;
+		    height: 35px;
+		    right: 55px;
+		    z-index: 100;
+		}
+
+		#formCadastroCliente, #formCadastroVeiculo, #formLancaProgramacao {
+		    margin: 10px;
+		}
+
+		#divBuscaInput{
+		    position: absolute;
+		    display: none;
+		    height: auto;
+		    cursor: pointer;
+		    background: white;
+		    -webkit-border-radius: 5px;
+		    -moz-border-radius: 5px;
+		    border-radius: 5px;
+		    z-index: 1051;
+		    left: 151px;
+		    top: 35px;
+		    width: 577px;
+		    display: block;
+		}
+
+		.acoesVeiculoTitulo.linha {
+		    display: block;
+		    font-weight: bold;
+		}
+		/*#divOpcoesVeiculo input{
+		    width: 126px;
+		}*/
+
+		#divMenuCabecalho{
+		    position: relative;
+		    float: right;
+		}
+
+		.divIconVelocidade span{
+		    position: absolute;
+		    top: 6px;
+		    width: 30px;
+		    font-weight: bold;
+		    text-align: center;
+		}
+
+		.customized-marker{
+		  background-color: rgba(0, 255, 255, 0);
+		  .content{
+		    background-color: #FF5A5F;
+		    color: #fff;
+		    padding:0px 5px;
+		    font-size: 14px;
+		  }
+		  .remove-background{
+
+		    padding: 0px;
+		    margin: 0px;
+		    margin-top: -4px;
+		    color:#FF5A5F;
+		    background-color: rgba(255, 255, 255, 0);
+		  }
+		}
+		.customized-marker.customized-marker-hover{
+		  .content{
+		    background-color: #252525;
+		  }
+		  .remove-background{
+		    color:#252525;
+		  }
+		}
+
+		.ativa-user {
+		    float: left;
+		    margin-left: -15px;
+		}
+		.usuario-master {
+		    float: right;
+		    margin-right: -15px;
+		}
+
+		#formUsuario {
+		    padding:0 10px;
+		}
+
+		#btnMaster, #btnAtivaUser {
+		    border-top-left-radius: 5px;
+		    border-bottom-left-radius: 5px;
+		}
+		.title-master {
+		    display:block;
+		}
+
+		#btnGravarUser{
+		    margin-top: 14px;
+		}
+
+		/*relatorios*/
+
+		.float-left {
+		    float: left;
+		}
+
+		.folha-cabecalho span {
+		    display: block;
+		    text-align: left;
+		}
+
+		.nome-relatorio {
+		    display: inline;
+		    border: 1px solid #232222;
+		    border-radius: 8px;
+		    padding: 3px 28px;
+		    float: left;
+		    margin-top: 35px;
+		}
+
+		.rel-folha .input-group{
+		    margin: 0 auto;
+		}
+
+		.table-colaboradores {
+		    width: 100%;
+		    max-width: 100%;
+		    margin-bottom: 20px;
+		    border: 1px solid #ccc;
+		}
+
+		.input-busca {
+		    float: right;
+		}
+
+		.relarorio-folha, .relarorio-veiculos {
+		    float: right;
+		    text-align: right;
+		}
+		.relarorio-folha input {
+		    margin: 4px 1px;
+		    height: 32px;
+		    border: 1px solid #cccccc;
+		    border-radius: 4px;
+		}
+
+		#inputDataInicial {
+		    border-top-right-radius: 0px;
+		    border-bottom-right-radius: 0;
+		}
+
+        #botaoPainelControle{
+            margin-bottom: -1px !important;
+        }
+
+		#inputDataFinal {
+		    border-top-left-radius: 0px;
+		    border-bottom-left-radius: 0px;
+		}
+
+		.bt-buscar-folha {
+		    padding: 5px 8px;
+		    border-radius: 0px;
+		    margin-top: 4px;
+		}
+
+		.relatorio-folha-container {
+		    background-color: #FFF;
+		}
+
+		.form-folha {
+		    display: inline-block;
+		}
+		.folha-cabecalho span.user-name {
+		    display: inline-block;
+		    text-transform: capitalize;
+		    font-weight: bold;
+		}
+
+		.folha-cabecalho span.init-date, .folha-cabecalho span.final-date {
+		    display: inline-block;
+		}
+
+		.painel-controle-container {
+		    background-color: #FFF;
+		}
+
+		.divMenuModalCadastro{
+		    display: inline-block;
+		    height: 50px;
+		    width: 100%;
+		    margin-left: -4px;
+		    position: relative;
+		}
+
+		.divMenuModalCadastro input{
+		    float: right;
+		    width: 200px;
+		    height: 34px;
+		    border-radius: 5px;
+		    -webkit-border-radius: 5px;
+		    -moz-border-radius: 5px;
+		    padding: 5px;
+		}
+
+		.bloco {
+		    display: block;
+
+            .form-info-right {
+                padding-left: 0px;
+
+                input {
+                    border-bottom-left-radius: 0px;
+                    border-top-left-radius: 0px;
+                }
+            }
+            .form-info-left {
+                padding-right:0px;
+
+                input {
+                    border-bottom-right-radius: 0px;
+                    border-top-right-radius: 0px;
+                }
+            }
+		}
+        .bootstrap-timepicker-widget.dropdown-menu {
+            display:block;
+            width:160px;
+        }
+
+		.linha {
+		    display: inline-block;
+		}
+
+		.infoVeiculoItem {
+		    width: 90px;
+		}
+		#tableRelatorioFolha th, #tableRelatorioFolha td {
+		    text-align: center;
+		}
+		.percent div {
+		    width: 60px;
+		    text-align: right;
+		    margin: 0 auto;
+		}
+		#buscaTopoModal{
+		    position: absolute;
+		    right: 0;
+		    top: 0;
+		    z-index: 1000;
+		    float: right;
+		    min-width: 160px;
+		    padding: 5px 10px;
+		    margin: 0px 0 0;
+		    list-style: none;
+		    font-size: 14px;
+		    text-align: left;
+		    background-color: #ffffff;
+		    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+		    -webkit-background-clip: padding-box;
+		    background-clip: padding-box;
+		}
+
+
+		#buscaTopoModal .liBusca{
+		    color: #333333;
+		    text-decoration: none;
+		}
+
+		#buscaTopoModal li:hover{
+		    background-color: #f5f5f5;
+		}
+
+		#buscaTopoModal li:hover .liBusca{
+		    cursor: pointer;
+		}
+
+		.filtros-list-veiculos {
+		    float: left;
+		    display: inline-block;
+		    text-align: left;
+		    margin-right: 15px;
+		}
+
+		span.sem-modulo {
+		    display: block;
+		}
+
+		.bt-buscar-rel-veiculos, .bt-buscar-rel-clientes, .bt-buscar-rel-modulos, .bt-buscar-rel-chips {
+		    margin-top: 19px;
+		    padding: 6px 16px;
+		}
+
+
+		/******************************************************************/
+		/*CLASSES DOS ICONES DOS VEICULOS**********************************/
+		/******************************************************************/
+        .divIconU div{ // para o tipo de veículos OUTROS
+            position: absolute;
+        }
+
+
+        // ********************
+		.divIcon0 div{
+		    position: absolute;
+		}
+
+		.divIcon1 div{
+		    position: absolute;
+
+		}
+
+		/****************/
+		.divIcon2 div{
+		    position: absolute;
+		}
+
+		/****************/
+		.divIcon3 div{
+		    position: absolute;
+
+		}
+
+		.divIcon4 div{
+		    position: absolute;
+		}
+
+		.divIcon5 div{
+		    position: absolute;
+		}
+
+		.divIcon6 div{
+		    position: absolute;
+		}
+		/****************/
+		.divIcon7 div{
+		    position: absolute;
+		}
+
+		.divIcon7 img{
+		}
+
+		.input-data{
+		  padding: 3px 2px;
+		  height: 22px;
+		  font-weight: bold;
+		}
+
+		.buttons-action {
+		    padding-bottom: 5px;
+		}
+
+		table tr.table-description td {
+		    border-top: none;
+		    padding: 0px;
+		}
+
+		table tr.table-description td.name-user {
+		    padding: 5px;
+		}
+		table > thead > tr.tr-thead > th {
+		    border-top: none;
+		}
+
+		.disabled {
+		    pointer-events: none !important;
+		    cursor: default !important;
+		    opacity: 0.6;
+		}
+
+		.iconRotaInicio{
+		  margin-top: -47px;
+		  margin-left: -23px;
+		}
+
+		.listagemRotas{
+		  font-size: 10px;
+		  font-weight: bold;
+		  background: #aad3f7;
+		  min-width: 309px;
+		  border-radius: 3px;
+		  -webkit-border-radius: 3px;
+		  -moz-border-radius:3px;
+		  -ms-border-radius:3px;
+		  margin: 0.5px;
+		}
+
+		.listagemRotas:hover{
+		  background: #3489d4;
+		  color: white;
+		}
+
+		.bt-local-empresa {
+		    margin: 30px 0 0;
+		}
+
+		.block-local-empresa {
+		    float: left;
+		}
+
+		.img-logo-cli {
+		    width: 100px;
+		    float: right;
+		}
+		.img-logo-cli .img-logo {
+		    max-width: 100%;
+		}
+
+		.bt-mais-campo {
+		    padding: 0px 8px;
+		    background-color: #337ab7;
+		    color: #FFF;
+		}
+
+		.bt-mais-campo:hover, .bt-mais-campo:active, .bt-mais-campo:focus {
+		    color: #FFF;
+		    background-color: #286090;
+		    border-color: #204d74;
+		}
+
+		.bt-del {
+		    padding: 0px 12px;
+		}
+
+		.ativa-cli {
+		    display: inline-block;
+		    float: left;
+		    margin-top: 30px;
+		    margin-right: 15px;
+		}
+
+		.modal-chip {
+		    margin: 0 auto;
+		    display: block;
+		    float: none;
+		}
+		.rel-km {
+		    text-align: right;
+		    margin-top: 21px;
+		}
+
+		.nada-encontrado {
+		    text-align: center;
+		    font-size: 25px;
+		}
+
+		.table-infoVeiculo{
+		    font-size: 10px;
+		    font-weight: bold;
+		    overflow: hidden;
+		    overflow-y: scroll;
+		}
+
+		/* --------- Painel dos veiculos responsivo --------- */
+
+
+		.img-80{
+		    width: 80px;
+		    height: 80px;
+		}
+		.agrupar-historico {
+		    display: block;
+		}
+		.group-mim {
+		    border-bottom-left-radius: 4px !important;
+		    border-top-left-radius: 4px !important;
+		}
+		/* The switch - the box around the slider */
+		.switch {
+		  position: relative;
+		  display: inline-block;
+		  width: 60px;
+		  height: 34px;
+		}
+
+		/* Hide default HTML checkbox */
+		.switch input {display:none;}
+
+		/* The slider */
+		.slider {
+		  position: absolute;
+		  cursor: pointer;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  bottom: 0;
+		  background-color: #ccc;
+		  -webkit-transition: .4s;
+		  transition: .4s;
+		}
+
+		.slider:before {
+		  position: absolute;
+		  content: "";
+		  height: 26px;
+		  width: 26px;
+		  left: 4px;
+		  bottom: 3px;
+		  background-color: white;
+		  -webkit-transition: .4s;
+		  transition: .4s;
+		}
+
+		input:checked + .slider {
+		  background-color: #337ab7;
+		}
+
+		input:focus + .slider {
+		  box-shadow: 0 0 1px #2196F3;
+		}
+
+		input:checked + .slider:before {
+		  -webkit-transform: translateX(26px);
+		  -ms-transform: translateX(26px);
+		  transform: translateX(26px);
+		}
+
+		/* Rounded sliders */
+		.slider.round {
+		  border-radius: 34px;
+		}
+
+		.slider.round:before {
+		  border-radius: 50%;
+		}
+
+		#tablePainelControle tr[visible='false'],
+		.no-result{
+		  display:none;
+		}
+
+		.tablePainelControle tr[visible='true']{
+		  display:table-row;
+		}
+
+		.counter{
+		  padding:8px;
+		  color:#ccc;
+		}
+
+		#buscaVeiManutencao {
+		    padding-left: 0;
+		}
+
+		.confirma-manu, .prox-manu, .edita-manu, .excluir-manu {
+		    width: 343px;
+		    margin: 0 auto;
+		    padding: 15px;
+		    border: 1px solid #ccc;
+		}
+
+		.excluir-manu {
+		    text-align: center;
+		}
+
+		.tbs-conf-manu {
+		    margin-top: 20px;
+		}
+		.edit-mntc {
+		    margin-right: 5px;
+		    margin-left: 5px;
+		}
+		.confirma-mntc {
+		    margin-right: 5px;
+		}
+
+		.bt-chack {
+		    background-color: buttonface;
+		}
+
+		#alertaPrincipal {
+		    background: #FFF;
+		    top: 15%;
+		    position: absolute;
+		    right: -560px;
+		    height: 560px;
+		    width: 485px;
+		    display: none;
+		    overflow: auto;
+		    border-top-left-radius: 5px;
+		    border-bottom-left-radius: 5px;
+		}
+
+        .panel-body:after {
+            clear: both !important;
+        }
+
+        //placas no mapa
+        .divIconVelocidade {
+            div {
+                height: 35px;width: 35px;background-color: #ffffff;border-radius: 30px;border: 4px solid #ff0000;
+            }
+            span {
+                font-size: 16px;top: 7px;left: 2px;
+            }
+        }
+
+        .divIconParada {
+            div {
+                height: 35px;
+                width: 35px;
+                background-color: #ffffff;
+                border-radius: 30px;
+                border: 4px solid #ff4002;
+                text-align: center;
+            }
+
+            span {
+                font-size: 10px;
+                top: 5px;
+                position: relative;
+            }
+        }
+
+        .parada-excesso-vel:hover {
+            cursor: pointer;
+        }
+
+        .divIconPorta {
+        	div {
+	        	height: 35px;
+	            width: 35px;
+	            background-color: #ffffff;
+	            border-radius: 30px;
+	            border: 4px solid #4169E1;
+	            text-align: center;
+            }
+        }
+
+        .divIconPorta {
+        	span {
+	        	font-size: 15px;
+				top: 6px;
+				position: relative;
+            }
+        }
+
+        .reqListaLoading span {
+        	font-size: 22px;
+        }
+
+    .btn-painel-mapa{
+        color: white
+    }
+}

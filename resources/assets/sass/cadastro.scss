@@ -1,0 +1,872 @@
+.text-center{
+	text-align: center;
+}
+
+.imput-ajudante-painel {
+	display: flow-root;
+}
+
+.modal-select-motoristas {
+    display: -webkit-box;
+	.select2{
+		    width: 100% !important;
+	}
+}
+
+.imput-mot-aju-painel{
+	float: right;
+}
+
+.confirma-manu, .prox-manu, .edita-manu, .excluir-manu {
+    width: 343px;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+.clearfix:after, .dl-horizontal dd:after, .container:after, .container-fluid:after, .row:after, .form-horizontal .form-group:after, .btn-toolbar:after, .btn-group-vertical>.btn-group:after, .nav:after, .navbar:after, .navbar-header:after, .navbar-collapse:after, .pager:after, .panel-body:after, .modal-footer:after {
+    clear: none !important;
+}
+
+.select2-container .select2-selection--single {
+    height: 35px !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 31px !important;
+}
+
+.has-error .select2-container--default .select2-selection {
+    border: 1px solid #E04B4A;
+}
+
+.fade.in {
+    z-index:10;
+}
+.modal-backdrop.in {
+    z-index:1;
+}
+.alert {
+    width: 385px;
+    margin-top: -35px;
+}
+
+.erros-importacao {
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    color: #8a6d3b;
+}
+
+.form-horizontal .form-group {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+.form .form-group {
+    margin-left:0px;
+    margin-right:0px;
+    margin-bottom: 5px;
+}
+
+.tel-mail {
+    padding-left: 0px;
+}
+
+.tel-cliente {
+    max-height: 145px;
+    overflow: auto;
+}
+.mail-cliente {
+    max-height: 152px;
+    overflow: auto;
+}
+
+.group-mais-campo {
+    margin-top:34px;
+}
+.icon-campo-add {
+    margin-top: 9px;
+}
+.chec-tipo-cliente {
+    // width: 100px;
+    height: 33px;
+
+}
+
+.block-chec-pes {
+    width:28%;
+}
+
+.mapa-cliente {
+    float: left;
+    height: 250px;
+    position: relative;
+    width: 100%;
+}
+
+
+#formCadastro {
+    padding:10px;
+}
+.block-salvar {
+    float:right;
+
+    .btn.btn-lg {
+        font-size: 18px;
+        padding: 15px 30px;
+    }
+    .btn-primary {
+        background-color: #2196f3;
+        border-color: #2196f3;
+
+        &:hover {
+            background-color:#2479bd;
+            border-color:#22659a;
+        }
+    }
+    .danger-eagle {
+        float: right;
+        margin-right: 30px;
+    }
+}
+
+.logo-atual {
+    width: 110px;
+    margin-top: 10px;
+}
+
+.switch {
+    height:100%;
+    width:61px;
+
+    .switch input {
+        display:none;
+    }
+}
+
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+  width:60px;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+  width:60px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#formCadastroCliente, #formCadastroVeiculo {
+    margin: 10px;
+
+    .select2-container {
+        width: 100% !important;
+    }
+    .paran-cad-cli {
+        h3 {
+            text-align: center;
+        }
+    }
+    .mot-sem-aju {
+        border-left: 2px solid #ccc;
+        border-right: 2px solid #ccc;
+    }
+    .com-ajuda {
+        background-color: #b7dfb9;
+        border-radius: 11px;
+        padding: 0px 5px 2px 5px;
+    }
+    .sem-ajuda {
+        background-color: #a6d5fa;
+        border-radius: 11px;
+        padding: 0px 5px 2px 5px;
+    }
+
+    .select2-search__field {
+        width: auto !important;
+    }
+
+    #modulosSistema {
+
+        .block-mod-sis {
+            padding: 2px 0px;
+
+            .check-descricao {
+                width: 17px;
+                height: 17px;
+            }
+            .md-descricao {
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .block-api {
+        height: 125px;
+    }
+
+}
+.nav-tabs.nav-eagle {
+    padding: 0;
+}
+.pane-eagle {
+    padding: 10px 0;
+}
+
+.title-configuracoes-cliente {
+    border-bottom: 1px solid #ccc;
+}
+#cadastroCliente, #cadastroPontos, #cadastroVeiculo{
+
+    .nav-eagle{
+        margin-top: 0px;
+    }
+
+    .tab-content {
+        background-color: #FFF;
+        .panel.panel-default {
+            border: none;
+            box-shadow: none;
+        }
+    }
+}
+#diaSemanaPontos {
+    width: 300px;
+}
+
+.btn.bt-copiar-key, .btn.bt-new-key {
+    padding: 7px 15px 6px 15px;
+}
+
+.divMenuModalCadastro {
+    display: inline-block;
+    height: 50px;
+    width: 100%;
+    margin-left: -4px;
+    position: relative;
+}
+
+.block-salvar {
+    margin-top: 22px;
+}
+
+.local-empresa {
+    margin:20px 0 0;
+}
+
+.block-ativo-cliente {
+    width: 32.6%;
+    float: right;
+    text-align: right;
+
+    label.tipo-cliente {
+        margin-right: 14px;
+    }
+}
+#metrosRaio {
+    width: 50%;
+    display: inline-block;
+}
+.leaflet-popup-content {
+    a.bt-finaliza-local {
+        color:#FFF !important;
+    }
+}
+.breadcrumb{
+    li{
+        z-index:100;
+    }
+}
+.ul-busca {
+    top: 63px;
+}
+.ul-busca-topo {
+    bottom: -129px;
+}
+.ul-busca, .ul-busca-topo {
+    background-color: #f3f1f1;
+    padding-left: 12px;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 120px;
+    overflow: auto;
+
+    li {
+        list-style:none;
+
+        .buscados {
+            color:#636b6f;
+        }
+
+        .buscados-topo {
+            color:#636b6f;
+        }
+    }
+}
+
+
+.panel-usuario {
+    margin-left: 3%;
+    width: 95% !important;
+}
+
+#listarUsuarios {
+    .btn.bt-status-user {
+        background-color: #0CE88A;
+        color: #FFF;
+
+        &:hover{
+            color:#FFF;
+            background-color: #1cd888;
+        }
+    }
+    .bt-danger-user {
+        background-color: #9a1919;
+        color:#FFF;
+    }
+}
+
+.label-botoes-table {
+    display:block;
+    padding: 8px 0 0px;
+    font-size: 14px;
+}
+
+.form-export {
+    display:inline-block;
+    margin-right: -3px;
+}
+.filtros-cliente {
+    display: inline-block;
+}
+
+.placa {
+    text-transform:uppercase;
+}
+
+.panel-modulo {
+    margin-left: 3%;
+    width: 95% !important;
+
+}
+
+.lb-bt-exportar {
+    display:block;
+}
+
+.error{
+    color: red;
+}
+
+.marginPattern{
+    margin: 15px;
+}
+
+.paddingPattern{
+    padding:10px;
+}
+
+.select-clientes {
+    width:300px;
+    //float:right;
+    display:inline-block;
+    margin: 0px -10px 8px 0;
+
+    .select-cliente-motoristas {
+        width: 100%;
+    }
+    .select-cliente-veiculo {
+        width: 100%;
+    }
+
+    #selectClientesTipoManutencao, #selectClientesManutencao{
+        width: 400px;
+    }
+
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+    height: 70px;
+    overflow: auto !important;
+}
+
+#cadastroMotoristaAjudante {
+    .mais-licenca {
+        display: inline-block;
+        position: relative;
+        float: left;
+        margin-top: 22px;
+
+        .tb-mais-licenca {
+            padding: 0px 15px 0px 0px;
+            font-size: 25px;
+        }
+        .disabled-bt {
+            pointer-events: none;
+            cursor: default;
+        }
+        &.disabled-bt {
+            cursor: not-allowed;
+        }
+    }
+    .add-licenca-motorista {
+        display: inline-block;
+        position: relative;
+        float: left;
+        margin-top: 27px;
+    }
+    .table-licenca {
+        margin-top: 15px;
+    }
+}
+
+#modalAlerta {
+    .form-licenca {
+        .lidescricao {
+            display: inline-block;
+            width: 84%;
+            margin-right: 14px;
+        }
+    }
+}
+
+#modalClean {
+    margin-top: 100px;
+}
+
+@media (min-width: 764px) and (max-width: 1266px){
+   .container {
+     width: 978px;
+   }
+}
+
+.btn-tb {
+    margin: 1px;
+}
+
+.bt-gerar {
+    float: right;
+}
+
+/* Jornada de trabalho */
+#table-jornada-trabalho {
+    margin-top: 5px;
+    width: 100%;
+    th, td {
+        padding: 1px 4px;
+        vertical-align: middle;
+
+        div {
+            margin-bottom: 3px;
+        }
+    }
+}
+
+#formJornadaLivre {
+    .title-ips {
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .title-dia, .title-dsr{
+        display: inline-block;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 2px 5px;
+    }
+    .checks {
+        // margin-top: 24px;
+
+        .check-dias {
+            padding: 9.3px;
+            display: block;
+            font-size: 14px;
+
+            &.chdomindo {
+                padding-top: 2px;
+            }
+        }
+
+    }
+    .select2-container {
+        width: 100% !important;
+    }
+    .ip-total-horas, .ip-intervalo-jornada {
+        margin: 2px;
+    }
+}
+
+#formJornadaFixa{
+	.select2-container {
+        width: 100% !important;
+    }
+}
+
+.th-acoes {
+    width: 105px !important;
+}
+
+#divCadastroPonto {
+
+    .bt-add-disponibilidade {
+        margin: 70px 0px 15px 0;
+    }
+    .block-table-disp {
+        height: 215px;
+        overflow: auto;
+    }
+}
+
+#cadastroPerfilAcesso {
+
+	span.color-red-text {
+	    display: inline-block;
+	    background-color: #fb746b;
+	    border-radius: 10px;
+		font-weight: bold;
+	    color: black;
+	    padding: 2px 7px;
+	}
+
+	input[type="checkbox"] {
+	    width: 20px;
+	    height: 20px;
+
+		&#ckVeiculos{
+			margin-top: 20px;
+		    margin-bottom: 20px;
+		    float: left;
+		}
+	}
+
+	.imput-size {
+		font-size: 18px !important;
+		vertical-align: middle;
+		float: left;
+    	margin-top: 16px;
+    	margin-left: 6px;
+	}
+
+    .bts-acesso {
+        margin-top: 30px;
+    }
+
+	.btn-permissoes{
+	    height: 35px;
+	    margin-top: -6px;
+	}
+
+	span.active.fa.fa-angle-double-right {
+	    float: right;
+		color: #3dada3;
+		margin-top: 2px;
+	}
+
+	.block-categorias{
+		margin-top: 20px;
+	}
+
+    .categorias-nomes {
+        font-size: 14px;
+        background-color: #f6f5f5;
+        border-top-left-radius: 14px;
+        border-top-right-radius: 14px;
+        margin-top: 4px;
+        padding-right: 0px;
+        padding-left: 0px;
+        min-height: 300px;
+
+        #categoriasNome {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+            border-bottom: 1px solid #CCC;
+            font-weight: 600;
+        }
+        .linha-categoria {
+            font-weight: 600;
+            padding: 6px;
+            padding-right: 20px;
+            padding-left: 20px;
+
+            a {
+                color: #22262e;
+                text-decoration: none;
+
+                &:active, &:focus {
+                    color: #3dada3;
+                }
+
+				&.active {
+					color: #3dada3;
+				}
+
+            }
+        }
+
+    }
+    .block-permissoes {
+        margin-top: 34px;
+        border-top: 1px solid #CCC;
+
+        .cabecalho-permissoes {
+            float: right;
+            margin-top: 10px;
+		    margin-bottom: 10px;
+    		width: 63%;
+
+            .form-title-perimssoes{
+                display: inline-block;
+                background-color: #bdbdbd;
+                padding: 5px 8px;
+                margin-left: -2px;
+
+                input {
+                    width: 15px;
+                    height: 15px;
+					margin-left: 1px;
+					float: right;
+                }
+            }
+        }
+        .permissoes {
+            font-size: 14px;
+            font-weight: 900;
+
+            hr{
+                margin: 0px;
+            }
+
+			.perfil-itens-nome{
+				width: 37%;
+			}
+
+			.linha-linha{
+				float: right;
+				width: 63%;
+			}
+        }
+    }
+    .perfil-permissoes {
+        width: 20px;
+        height: 20px;
+
+		span{
+			height: 4px;
+		    width: 20px;
+		    background-color: #000;
+		    display: inline-table;
+		    margin-bottom: 6px;
+		}
+
+        &.ppvisualizar {
+            margin: 0 36px;
+        }
+        &.ppcadastrar {
+            margin: 0 34px;
+        }
+        &.ppeditar {
+            margin: 0 21px;
+        }
+        &.ppexcluir {
+            margin: 0 29px;
+        }
+        &.ppimportar {
+            margin: 0 26px;
+        }
+
+    }
+}
+
+#divCadastroRegiao {
+/* --------- Mapa do cadastro de regioes responsivo --------- */
+        #mapaRegiao{
+            z-index: 0;
+            float: left;
+            position: relative;
+            width: 100%;
+            height: 750px;
+        }
+
+        /*@media (max-height: 900px) {
+            #mapaRegiao{
+                height: 450px;
+            }
+        }
+        @media (max-height: 600px) {
+            #mapaRegiao{
+                height: 180px;
+            }
+        }
+        @media (max-height: 1280px) {
+            #mapaRegiao{
+                height: 660px;
+            }
+        }
+        @media (max-height: 1024px) {
+            #mapaRegiao{
+                height: 475px;
+            }
+        }
+        @media (max-height: 700px) {
+            #mapaRegiao{
+                height: 320px;
+            }
+        }*/
+}
+
+#cadastroPontos {
+    #divListPesquisarPontos {
+        border: 1px solid #D3D3D3;
+        background-color: #fffff;
+        position: absolute;
+        z-index: 999;
+        max-height: 250px;
+        overflow-y: auto;
+        border-radius: 4px;
+        width: 97%;
+    }
+
+    .spanPontoPesquisar {
+        background-color: #ffffff;
+        border-color: #D3D3D3;
+        cursor: pointer;
+        color: #D3D3D3;
+        padding-bottom: 2px;
+
+        &#spanBuscaPonto {
+            background-color:  #1CAF9A;
+            border-color:  #1CAF9A;
+        }
+    }
+    .fa-spinner-localiza-ponto {
+
+        font-size: 16px;
+        margin-left: 5px;
+    }
+}
+
+#modalEditItensRota {
+    #dtSaidaEdited {
+        width: 125px;
+    }
+}
+
+#cadastroParametrizacao {
+
+    .block-pedidos {
+        position: relative;
+        top: 0;
+        float: left;
+        width: 100%;
+
+        .dataTables_scrollHeadInner {
+            width: 100% !important;
+
+            .table {
+                width: 100% !important;
+            }
+        }
+
+        h5 {
+            position: absolute;
+            background-color: #ccd7e4;
+            height: 42px;
+            padding: 12px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            top: -8px;
+        }
+    }
+}
+
+
+#cadastroFeriados {
+
+	.sm-4-data {
+		width: 32.1%;
+	}
+
+    // .data-feriado {
+    //     position: relative;
+    //     // width: 150px; height: 20px;
+    //     color: white;
+    // }
+
+    // .data-feriado:before {
+    //     position: absolute;
+    //     top: 3px; left: 3px;
+    //     content: attr(data-date);
+    //     display: inline-block;
+    //     color: black;
+    // }
+
+    // .data-feriado::-webkit-datetime-edit, input::-webkit-inner-spin-button, input::-webkit-clear-button {
+    //     display: none;
+    // }
+
+    // .data-feriado::-webkit-calendar-picker-indicator {
+    //     position: absolute;
+    //     top: 3px;
+    //     right: 0;
+    //     color: black;
+    //     opacity: 1;
+    // }
+}
+
+#listCadastroGrupoVeiculos{
+	.gv-col-detalhes{
+		width: 69px !important;
+	}
+
+	.details-control.bt-details{
+		width: 100%;
+		text-align: center;
+	}
+
+	.badge{
+		margin-top: 10px;
+		margin-left: 10px;
+		font-size: 16px;
+		padding: 5px;
+	}
+}

@@ -1,0 +1,446 @@
+.min-select2{
+    span.select2-selection.select2-selection--multiple {
+        height: 14px;
+    }
+    ul.select2-selection__rendered {
+        height: 32px !important;
+    }
+
+    span.select2.select2-container.select2-container--default {
+        width: 310px !important;
+    }
+}
+
+.popover.top{
+    margin-top: -17px !important;
+}
+
+.ic-inerface-acomp{
+	color: #1b1e24;
+}
+
+.nomargin {
+   margin: 0 !important;
+}
+.nopadding {
+   padding: 0 !important;
+}
+
+.acomp-margin{
+    height: 70%;
+    border-left: 4px solid;
+    border-right: 4px solid;
+    // margin-top: 30px;
+}
+
+.span-acomp-item {
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    float: left;
+    margin-top: -13px;
+}
+
+.acomp-itens-line{
+    width: 100%;
+    position: absolute !important;
+    bottom: 18px !important;
+}
+
+.acomp-item{
+    width: 200px;
+    position: relative;
+    float:left;
+    margin: 3px;
+    height: 22px;
+}
+
+.ico-marker{
+    position: relative;
+	font-size: 55px;
+    margin-top: -16px;
+    z-index: 10;
+}
+
+
+.ico, .icons-maker{
+    position: relative;
+    // float: left;
+    float: right;
+    // margin-top: -20px;
+    // margin-right: -15px;
+}
+
+.list-acompanhamentos .ico{
+    font-size: 18px;
+    position: absolute;
+    top: 10px;
+    width: 24px;
+    left: 3.8px;
+    z-index: 11;
+    border-radius: 16px;
+    border: 99px;
+    padding: 4px;
+    background-color: white;
+    text-align: center;
+}
+
+.ic-inerface-acomp{
+    margin: 8px;
+    float: left;
+    font-size: 20px;
+    min-width: 170px;
+}
+
+.list-acompanhamentos {
+    font-size: 9px;
+
+    .ic{
+        padding: 0px;
+        float: left;
+        font-size: 11px;
+        margin-top: 5px;
+    }
+
+    .scroll-y{
+        height: 60px;
+    }
+}
+.panel-title-empresa{
+    float: right;
+    font-size: 18px;
+    text-align: right;
+}
+
+.list-acompanhamentos .cust-sm{
+    padding: 1px !important;
+    margin: 0px !important;
+    font-size: 11px;
+    float: left;
+
+    &.altura {
+        height: 74px;
+    }
+    &.primeiro {
+        width: 15%;
+    }
+
+    .acomp-margin {
+
+        .icons-maker {
+            padding: 2px 5px;
+            border-radius: 4px;
+            border: 2px solid #0000ff;
+            background-color: #FFF;
+
+            .icon-ico {
+                margin-right: 0px;
+                font-size: 14px;
+            }
+
+            &.b-success {
+                border: 2px solid #00aa00;
+            }
+            &.b-adiantado {
+                border: 2px solid #1313ff;
+            }
+            &.b-atrasado {
+                border: 2px solid #ff0000;
+            }
+        }
+    }
+}
+
+.panel-body.body-acomp{
+    padding: 1px !important;
+}
+
+.list-acompanhamentos {
+    .marker-up{
+        color: rgba(45, 169, 50, 1);
+    }
+    .marker-down{
+        color: rgba(244, 67, 54, 1);
+    }
+    .marker-tack{
+        color: rgba(63, 81, 181, 1);
+    }
+
+    .acomp-success{
+        background-color: rgba(166, 215, 168, 0.5);
+    }
+
+    .acomp-atrasado{
+        background-color: rgba(250, 161, 155, 0.5);
+    }
+
+    .acomp-adiantado{
+        background-color: rgba(166, 213, 250, 0.5);
+    }
+
+    .scroll-y{
+        overflow-x: auto;
+
+        &::-webkit-scrollbar-track {
+            background-color: #F4F4F4;
+        }
+        &::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+            background: #F4F4F4;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: #dad7d7;
+        }
+    }
+
+}
+
+.fa-truck-esquerda {
+    transform: rotateY(180deg);
+}
+
+.veic-status {
+    position: absolute;
+    font-size: 16px;
+    z-index: 13;
+    margin-left: 3px;
+    margin-top: 9px;
+    color: white;
+}
+
+.icon-truck {
+    position: absolute;
+    margin-top: -10px;
+}
+
+span.fa.fa-truck.fa-5.fa-truck-esquerda {
+    position: relative;
+    font-size: 34px;
+    z-index: 9;
+    top: 3px;
+}
+
+span.acomp-hora-entrega {
+    position: absolute;
+    font-size: 10px;
+    z-index: 1;
+    width: 40px;
+    padding-left: 3px;
+    margin-top: -3px;
+    border-radius: 5px;
+    color: #000;
+    bottom: 20px;
+    left: -8px;
+}
+.acomp-hora-nome {
+    position: absolute;
+    width: 100px;
+    left: -32px;
+    bottom: -18px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.popover-content, .popover-title {
+    font-size: 12px;
+    padding: 5px 5px !important;
+}
+
+.close-popover{
+    float: right;
+}
+
+.popover {
+    width: 140px !important;
+}
+
+.leg-green{
+    padding: 0px 5px;
+    margin-right: 5px;
+    border: 2px solid #2da932;
+    font-size: 8px;
+    background-color: #d2ebd3;
+    border-radius: 20px;
+}
+
+.leg-blue{
+    padding: 0px 5px;
+    margin-right: 5px;
+    border: 2px solid #59b5fb;
+    font-size: 8px;
+    background-color: #d2eafc;
+    border-radius: 20px;
+}
+
+.leg-red{
+    padding: 0px 5px;
+    margin-right: 5px;
+    border: 2px solid #fb746b;
+    font-size: 8px;
+    background-color: #fcd0cd;
+    border-radius: 20px;
+}
+
+.inner-addon {
+    position: relative;
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+ .col-sm-3.input-search-acomp {
+    float: right;
+}
+
+.inner-addon.left-addon {
+    width: 100%;
+}
+
+#acompanhamento {
+    .panel {
+        margin-bottom: 6px;
+
+        .panel-heading.cust-sm{
+            padding: 0px;
+            vertical-align: middle;
+            font-weight: bold;
+            font-size: 14px;
+
+            span{
+                font-weight: bold;
+                vertical-align: middle;
+                // margin-top: 3px;
+                font-size: 14px;
+
+                &.panel-dados-pontos, &.panel-mot-aju{
+                        border-left: 1px dashed #000;
+                        height: 28px;
+
+                    .serch-acomp {
+                        font-weight: 400;
+                        display: block;
+                        line-height: 14px;
+                        font-size: 10px;
+                    }
+                }
+            }
+
+            span.col-sm-4.panel-title-empresa.serch-acomp {
+                padding-top: 5px;
+            }
+
+            a{
+                margin: 0px !important;
+                padding: 0px !important;
+                margin-left: 7px !important;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+            .title-placa {
+                font-size: 12px;
+            }
+
+            .progresso {
+                position: absolute;
+                top: 0px;
+                height: 100%;
+
+                &.p-success {
+                    background-color: rgba(166, 215, 168, 0.5);
+                }
+                &.p-adiantado {
+                    background-color: rgba(166, 213, 250, 0.5);
+                }
+                &.p-atrasado {
+                    background-color: rgba(250, 161, 155, 0.5);
+                }
+
+            }
+
+        }
+    }
+}
+
+.block-data-km-prev {
+    font-size: 9px;
+
+    .ic {
+        font-size: 11px;
+        margin-top: 11px;
+    }
+    .data-km-prev {
+        float: left;
+        width: 90%;
+
+        .cust-sm.p-data {
+            width: 100%;
+        }
+        .cust-sm.p-km-rota {
+            width: 100%;
+        }
+    }
+}
+
+.realisado-invisible {
+    font-size: 9px;
+
+    .ic {
+        font-size: 11px;
+        margin-top: 13px;
+    }
+
+    .data-km-fim {
+        float: left;
+        width: 90%;
+
+        .r-data-fim, .r-km-rota {
+            width: 100%;
+        }
+
+        .r-data-fim {
+            width: 100%;
+        }
+        .r-km-rota {
+            width: 100%;
+        }
+    }
+}
+
+
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+
+::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: #dad7d7;
+}
+
+
+        // &::-webkit-scrollbar {
+        //   width: 5px;
+        //   height: 5px;
+        // }
+        // &::-webkit-scrollbar-thumb {
+        //     background: #000;
+        // }

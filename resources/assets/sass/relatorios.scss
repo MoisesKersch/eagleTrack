@@ -1,0 +1,301 @@
+
+#controleComunicacao{
+
+
+    }
+
+
+#tempoParado, #ignicaoLigada {
+    .block-data {
+        padding-left: 0px;
+        padding-right: 0px;
+
+        input {
+            border-bottom-right-radius: 0px;
+            border-top-right-radius: 0px;
+        }
+    }
+    .block-hora {
+        padding-left:0px;
+        padding-right:15px;
+
+        input {
+            border-bottom-left-radius:0px;
+            border-top-left-radius:0px;
+        }
+    }
+    .block-filtros {
+
+        label {
+            display:block;
+        }
+    }
+}
+
+#jornadaTrabalho {
+    .block-data {
+        padding-left: 0px;
+        padding-right: 0px;
+
+    }
+    .block-hora {
+        padding-left:0px;
+        padding-right:15px;
+
+        input {
+            border-bottom-left-radius:0px;
+            border-top-left-radius:0px;
+        }
+    }
+    .block-filtros {
+
+        label {
+            display:block;
+        }
+    }
+    .motoristas-jornada-relatorio {
+        margin-bottom:20px;
+    }
+    #gerarRelatorioJornadaTrabalho {
+        float: right;
+        z-index: 1;
+        position: relative;
+    }
+    #relatorioJornadaTable_wrapper {
+        margin-top: -60px;
+
+    }
+    #relatorioJornadaTable{
+
+        #layoutreltr{
+            background: #f8f8f9;
+            border-bottom: 1px solid #ddd;
+        }
+        #NomeMotor{
+            margin-top: 20px;
+        }
+    }
+
+}
+
+#excessoVelocidade {
+
+    .h4{
+        margin-top: 3px;
+        margin-bottom: 0px;
+    }
+
+    .block-data {
+        padding-left: 0px;
+        padding-right: 0px;
+
+    }
+    .block-hora {
+        padding-left:0px;
+        padding-right:15px;
+
+        input {
+            border-bottom-left-radius:0px;
+            border-top-left-radius:0px;
+        }
+    }
+
+    .block-filtros {
+
+        label {
+            display:block;
+        }
+    }
+    td.badge.placa-relatorio {
+        font-weight: bold;
+    }
+}
+
+.badge{
+    margin-top: 20px;
+}
+
+#relRegiao, #kmPercorrido {
+    .block-data {
+        padding-left: 0px;
+        padding-right: 0px;
+
+    }
+    .block-hora {
+        padding-left:0px;
+        padding-right:15px;
+
+        input {
+            border-bottom-left-radius:0px;
+            border-top-left-radius:0px;
+        }
+    }
+    .block-filtros {
+
+        label {
+            display:block;
+        }
+    }
+}
+
+#relatorioRegiaoBody > tr > td{
+    border-color: #f8f8f9;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+#proximidade {
+    .block-data {
+        padding-left: 0px;
+        padding-right: 0px;
+
+    }
+    .block-hora {
+        padding-left:0px;
+        padding-right:15px;
+
+        input {
+            border-bottom-left-radius:0px;
+            border-top-left-radius:0px;
+        }
+    }
+    .block-filtros {
+
+        label {
+            display:block;
+        }
+    }
+}
+
+.placa-relatorio {
+    strong {
+        padding: 0 90px;
+    }
+}
+
+.data-relatorio {
+    strong {
+        padding: 0 50px;
+    }
+}
+
+#controleHorarios {
+    .block-data {
+        padding-left: 0px;
+        padding-right: 0px;
+
+    }
+    .block-hora {
+        padding-left:0px;
+        padding-right:15px;
+
+        input {
+            border-bottom-left-radius:0px;
+            border-top-left-radius:0px;
+        }
+    }
+    .block-filtros {
+
+        label {
+            display:block;
+        }
+    }
+    #tableControleHorario {
+        .plc-horarios {
+
+            strong {
+                padding: 0 90px;
+            }
+        }
+    }
+}
+
+
+.bt_gerar_relatorio {
+    float: right;
+}
+
+
+.block-data {
+    padding-left: 0px;
+    padding-right: 0px;
+
+    input {
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+}
+.block-hora {
+    padding-left:0px;
+    padding-right:15px;
+
+    input {
+        border-bottom-left-radius:0px;
+        border-top-left-radius:0px;
+    }
+}
+.block-filtros {
+    label {
+        display:block;
+    }
+}
+
+#data-fim-label{
+    margin-top:15px;
+}
+
+.load {
+    text-align: center;
+    font-size: 20px;
+}
+
+.order-column:hover {
+    cursor: pointer;
+}
+
+.form-exportar {
+    width:250px;
+
+    .tempo-exportar {
+        margin-right: -2px;
+    }
+}
+.select-clientes {
+    width:300px;
+    //float:right;
+    display:inline-block;
+    margin: 0px -10px 8px 0;
+
+    .select-cliente-pontos {
+        width: 100%;
+    }
+}
+
+.item-empresa-regioes{
+    max-width: 50px !important;
+}
+
+.cabecalho-exportacoes{
+    padding: 3px;
+}
+
+#tempoParado{
+    a.time-parado.btn.btn-primary {
+        width: 70px;
+        height: 30px;
+    }
+
+    .btn-primary{
+        background-color: #3097d1 !important;
+        border-color: #3097d1 !important;
+        margin: 1px;
+    }
+
+    // .btn-primary .active{
+    //     background-color: #78bbe1 !important;
+    // }
+
+    .activated{
+        background-color: #78bbe1 !important;
+        border-color: #78bbe1 !important;
+    }
+}
